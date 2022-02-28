@@ -5,6 +5,9 @@ import java.util.List;
 
 import com.pluralsight.model.Speaker;
 
+import org.springframework.stereotype.Repository;
+
+@Repository("speakerRepository")
 public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
     
     public List<Speaker> findAll(){
